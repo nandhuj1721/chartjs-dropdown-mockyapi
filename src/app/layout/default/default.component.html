@@ -1,0 +1,13 @@
+<div class="container">
+
+    <mat-select class="selectopt" [(ngModel)]="changeChart" [(value)]="selected">
+        <mat-option value="Bar Chart" (click)="onChangeAmountClicked()">Bar Chart</mat-option>
+        <mat-option value="Pie Chart" (click)="onChangeAmountClicked()">Pie Chart</mat-option>
+        <mat-option value="Radar Chart" (click)="onChangeAmountClicked()">Radar Chart</mat-option>
+        <mat-option value="Line Chart" (click)="onChangeAmountClicked()">Line Chart</mat-option>
+        <mat-option value="Doughnut Chart" (click)="onChangeAmountClicked()">Doughnut Chart</mat-option>
+
+    </mat-select>
+
+    <router-outlet></router-outlet>
+</div>
